@@ -2,6 +2,7 @@ import { Component, inject, OnInit, ChangeDetectorRef, ChangeDetectionStrategy }
 import { LoaderComponent } from '../loader/loader.component';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { EmptyStateComponent } from '../empty-state/empty.state.component';
 import { ErrorStateComponent } from '../error-state/error.state.component';
 import { StatusBadgeComponent } from '../status-badge/status.badge.component';
@@ -14,6 +15,7 @@ import { TestCasesService, TestCases } from '../../services/tm.cases.service';
   standalone: true,
   imports: [
     MatTableModule,
+    MatTooltipModule,
     LoaderComponent,
     EmptyStateComponent,
     ErrorStateComponent,
